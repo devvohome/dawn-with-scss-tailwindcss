@@ -1,0 +1,21 @@
+require('dotenv').config()
+
+module.exports = {
+  purge: {
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      './**/*.liquid',
+      './src/**/*.tsx',
+      './src/**/*.ts',
+      './src/**/*.jsx', 
+      './src/**/*.js'
+     ],
+  
+  darkMode: 'media', // or 'media' or 'class'
+  theme: {
+    extend: {},
+  },
+  variants: {},
+  plugins: [],
+
+}
